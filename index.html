@@ -3,25 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Marios Spanakakis - Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/typography.css">
 </head>
-<body>
-    <!-- Introductory Section -->
-    <header class="intro-section">
-        <div class="profile-container">
-            <img src="_MG_5658_sw_square.png" alt="Your Profile Picture" class="profile-pic" />
-            <h1>Your Name</h1>
-        </div>
-        <p class="bio">Short description about yourself.</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/yourusername">LinkedIn</a> |
-            <a href="https://twitter.com/yourusername">Twitter</a> |
-            <a href="https://github.com/yourusername">GitHub</a>
-        </div>
-    </header>
-    
-    <!-- Projects Section (omitted for brevity) -->
 
+<body>
+    <div class="container">
+
+        <div class="sidebar" id="left-sidebar">
+            <span class="sidebar-title">Marios Spanakakis</span>
+
+            <section class="sidebar-section-container">
+                <span class="sidebar-section-title">Navigation</span>
+                <nav>
+                    <a href="#about-me" class="button">About Me</a>
+                    <a href="#projects" class="button">Projects</a>
+                </nav>
+            </section>
+            <hr>
+            <section class="sidebar-section-container">
+                <span class="sidebar-section-title">Contact</span>
+                <nav>
+                    <a class="icon-link" target="_blank" href="https://github.com/mariosspanakakis">
+                        <image src="./assets/icons/github.svg" class="icon"/>
+                    </a>
+                </nav>
+            </section>
+
+
+            
+            
+        </div>
+
+        <div class="main-content">
+
+            <header class="intro-section">
+                <div class="header-container">
+                    <img src="./assets/images/profile_image.png" alt="Profile Image" class="profile-pic" />
+                    <div class="intro-container">
+                        <span class="main-title">Hi, I'm Marios</span>
+                        <span class="main-subtitle">Welcome to my portfolio</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="section-container" id="about-me">
+                <span class="section-title">About</span>
+                <span class="text-body">This is a short description of myself. This is a short description of myself. This is a short description of myself. This is a short description of myself.This is a short description of myself.This is a short description of myself.</span>
+            </section>
+
+            <section class="section-container" id="projects">
+                <span class="section-title">Projects</span>
+                <div class="project-container">
+
+                    <article class="project-card image-left">
+                        <img src="./assets/images/standup_support_cover.png" alt="Project Image" class="project-image">
+                        <div class="project-info">
+                            <span class="project-title">Prosthetic Knee with Standup Support</span>
+                            <span class="project-description">A short description of the project.</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card image-right">
+                        <img src="./assets/images/standup_support_cover.png" alt="Project Image" class="project-image">
+                        <div class="project-info">
+                            <span class="project-title">Project 2</span>
+                            <span class="project-description">A short description of the project.</span>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+        </div>
+        </section>
+    </div>
 </body>
 </html>
+
+<!-- python -m http.server -->

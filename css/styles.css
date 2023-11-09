@@ -1,0 +1,178 @@
+/* COLORS */
+:root {
+    --main-dark: #1B8583;
+    /*--main-light: #8EF9F3;*/
+    --main-light: #6e6e6e;
+    --contrast: #F5EE9E;
+    --white: #ffffff;
+
+    --sidebar-width: 20%;
+}
+
+/* PAGE STYLING */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    text-align: center;
+    background: var(--main-light);
+    color: var(--white);
+    padding: 20px 0;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: var(--main-dark);
+    color: var(--white);
+    padding: 2%;
+    position: fixed;
+    overflow-y: auto;
+    height: 100vh;
+    text-align: center;
+}
+.sidebar-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.main-content {
+    width: 80%;
+    background-color: var(--white);
+    margin-left: 20%;
+    padding: 0px;
+    overflow-y: auto;
+    align-items: center;
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic {
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 60px;
+}
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    width: 90%;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    width: 100%;
+}
+.project-image {
+    width: 30vw;
+    border-radius: 10px;
+    height: auto;
+}
+.project-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+.image-left {
+    flex-direction: row;
+}
+.image-right {
+    flex-direction: row-reverse;
+}
+.image-left .project-info {
+    text-align: left;
+    padding-left: 20px;
+}
+.image-right .project-info {
+    text-align: right;
+    padding-right: 20px;
+}
+.image-left .project-title {
+    text-align: left;
+    padding-left: 0px;
+}
+.image-right .project-title {
+    text-align: right;
+    padding-right: 0px;
+}
+
+/* BUTTONS */
+a.button {
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 2px solid var(--white);
+    background-color: var(--main-light);
+    color:var(--white);
+    text-decoration: none;
+    width: fit-content;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+a.button:hover {
+    text-decoration: none;
+    background-color: var(--contrast);
+    color: var(--main-dark);
+    border: 2px solid var(--contrast);
+    cursor: pointer;
+}
+
+/* ICONS */
+.icon {
+    width: 2vw;
+}
+a.icon-link {
+    transition: transform 200ms ease-in-out;
+}
+a.icon-link:hover {
+    cursor: pointer;
+    stroke-width: 5;
+    margin: 0;
+    transform: rotate(15deg);
+}
+
+
+
+/* Add responsiveness if needed with media queries */
+@media screen and (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+    .image-left, .image-right {
+        /* If you want to stack the image and text on smaller screens */
+        flex-direction: column;
+    }
+    .project-image, .project-info {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

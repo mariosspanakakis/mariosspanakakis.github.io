@@ -1,0 +1,51 @@
+.sidebar-title {
+    font-size: 2.5vw;
+    text-align: center;
+}
+.sidebar-section-title {
+    display: inline;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.main-title {
+    display: inline;
+    font-size: 3vw;
+    margin: 0;
+    text-align: left;
+}
+.main-subtitle {
+    display: inline;
+    font-size: 1vw;
+    margin: 0;
+    text-align: left;
+}
+.section-title {
+    display: inline;
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-title {
+    display: inline;
+    font-size: 2vw;
+    margin: 0;
+    text-align: left;
+}
+.project-title {
+    display: inline;
+    font-size: 2vw;
+    margin: 0;
+    text-align: right;
+}
+
+.text-body {
+    display: inline;
+    font-size: 1vw;
+    margin: 0;
+    text-align:justify;
+    width: 60vw;
+}
