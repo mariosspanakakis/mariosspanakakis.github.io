@@ -183,6 +183,7 @@ a.button {
     display: inline-block;
     padding: 8px 16px;
     border-radius: 50px;
+    font-size: 1vw;
     background-color: var(--main-dark);
     color: var(--white);
     text-decoration: none;
