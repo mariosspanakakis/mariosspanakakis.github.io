@@ -1,23 +1,22 @@
 .sidebar-title {
     font-size: 2.5vw;
-    text-align: center;
+    line-height: 1.0;
 }
 .sidebar-section-title {
-    display: inline;
     font-size: 1.5vw;
     margin: 0;
-    padding: 20px;
-    text-align: center;
+    padding: 0px;
+    text-align: left;
 }
 .main-title {
     display: inline;
-    font-size: 3vw;
+    font-size: 4vw;
     margin: 0;
     text-align: left;
 }
 .main-subtitle {
     display: inline;
-    font-size: 1vw;
+    font-size: 2vw;
     margin: 0;
     text-align: left;
 }
@@ -34,18 +33,25 @@
     font-size: 2vw;
     margin: 0;
     text-align: left;
+    /*font-variant: small-caps;*/
 }
-.project-title {
+.project-scope {
     display: inline;
-    font-size: 2vw;
+    font-size: 1.2vw;
     margin: 0;
-    text-align: right;
+    text-align: left;
+    /*font-variant: small-caps;*/
 }
 
 .text-body {
-    display: inline;
+    display: block;
+    line-height: 1.5;
     font-size: 1vw;
     margin: 0;
-    text-align:justify;
-    width: 60vw;
+    text-align: justify;
+}
+
+.contact-text{
+    display: inline;
+    font-size: 1vw;
 }
