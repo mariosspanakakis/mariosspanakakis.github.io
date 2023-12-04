@@ -89,10 +89,14 @@ nav a {
     border-radius: 50%;
 }
 
-#introduction h1 {
+#greeting h1 {
     font-size: 80px;
     text-align: left;
     margin-left: 20px;
+    margin: 0;
+}
+#greeting p {
+    margin: 0;
 }
 
 .project {
@@ -127,13 +131,16 @@ nav a {
     text-align: right;
 }
 
-
 a.button {
     padding: 8px 16px;
     border-radius: 50px;
     background-color: var(--main-dark);
     color: var(--white);
     text-decoration: none;
+    width: fit-content;
+}
+a.button.right {
+    align-self: flex-end;
 }
 a.button:hover {
     text-decoration: none;
@@ -170,5 +177,11 @@ a.button:hover {
     }
     .project-description.right {
         text-align: center;
+    }
+    a.button {
+        align-self: center;
+    }
+    a.button.right {
+        align-self: center;
     }
 }
