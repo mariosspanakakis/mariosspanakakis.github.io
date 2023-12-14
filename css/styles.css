@@ -24,6 +24,13 @@ h2 {
     margin-top: 20px;
     margin-bottom: 0px;
 }
+h3 {
+    font-family: Quicksand-Light;
+    font-size: 20px;
+    font-variant: small-caps;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 p {
     font-family: Quicksand-Light;
     font-size: 20px;
